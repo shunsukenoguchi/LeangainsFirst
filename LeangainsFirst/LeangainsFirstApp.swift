@@ -11,7 +11,25 @@ import SwiftUI
 struct LeangainsFirstApp: App {
     var body: some Scene {
         WindowGroup {
+            MainTabView()
+        }
+    }
+}
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
             FastingTimerView()
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text("タイマー")
+                }
+            
+            ScheduleSettingsView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("スケジュール")
+                }
         }
     }
 }
