@@ -11,7 +11,7 @@ import SwiftUI
 struct LeangainsFirstApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FastingTimerView()
         }
     }
 }
